@@ -1,0 +1,1 @@
+This class is designed to build the test runtime environment with our mongodb (mongoose) database.

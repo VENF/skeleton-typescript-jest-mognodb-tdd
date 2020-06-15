@@ -1,0 +1,1 @@
+skeleton to work with typescript and jest - TDD using mongodb
