@@ -18,7 +18,9 @@ const PostEndpoint = (endpoint: string, data: any) => {
 //   PostEndpoint('/users', element);
 // });
 
+//--------- Skip ---------//
 test('index[POST]', () => {
   const text = 'is running';
   expect(text).toMatch(/is running/);
 });
+//--------- Skip ---------//

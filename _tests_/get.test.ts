@@ -27,7 +27,9 @@ const GetEndpoint = (endpoint: string) => {
 //------------------GET tests--------------//
 //GETEndpoint('/users')
 
+//--------- Skip ---------//
 test('index[POST]', () => {
   const text = 'is running';
   expect(text).toMatch(/is running/);
 });
+//--------- Skip ---------//

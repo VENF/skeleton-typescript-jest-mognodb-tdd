@@ -12,8 +12,8 @@
     "tests": "cross-env NODE_ENV=test npx jest --detectOpenHandles",
     "tw": "cross-env NODE_ENV=test npx jest --watchAll --detectOpenHandles"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["tests", "jest", "tdd", "typescript", "node"],
+  "author": "Victor Naranjo",
   "license": "ISC",
   "devDependencies": {
     "@types/cors": "^2.8.6",
