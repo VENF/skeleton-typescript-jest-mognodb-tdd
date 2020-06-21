@@ -5,7 +5,7 @@
 - Framework: `Express`
 - Database: `Mongodb`
 
-### Snitialize
+### Initialize
 ```sh
 npm install # install all the dependecies
 
