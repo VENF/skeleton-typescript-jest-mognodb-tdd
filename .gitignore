@@ -1,7 +1,8 @@
-node_modules
 dist
 .env
 .tmp
 logs
 *.log
 npm-debug.log*
+node_modules
+coverage

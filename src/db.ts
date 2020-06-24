@@ -6,11 +6,14 @@ const options: ConnectionOptions = {
   useNewUrlParser: true,
   useUnifiedTopology: true
 };
+const { MONGO_HOSTNAME, MONGO_PORT, MONGO_DB } = process.env;
 
-mongoose.connect(config.MONGODB_URI, options);
-const connection = mongoose.connection;
+const url = `mongodb://${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}`;
 
 if (process.env.NODE_ENV === 'dev') {
+  mongoose.connect(config.MONGODB_URI, options);
+  const connection = mongoose.connection;
+
   connection.once('open', (_) => {
     console.log('db is connected');
   });
@@ -18,4 +21,7 @@ if (process.env.NODE_ENV === 'dev') {
     console.log(err);
     process.exit(0);
   });
+} else {
+  mongoose.connect(url, options);
+  const connection = mongoose.connection;
 }

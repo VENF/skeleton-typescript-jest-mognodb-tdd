@@ -10,7 +10,8 @@
     "build": "cross-env NODE_ENV=pro tsc",
     "clean": "rimraf ./dist",
     "tests": "cross-env NODE_ENV=test npx jest --detectOpenHandles",
-    "tw": "cross-env NODE_ENV=test npx jest --watchAll --detectOpenHandles"
+    "tw": "cross-env NODE_ENV=test npx jest --watchAll --detectOpenHandles",
+    "testsc":"cross-env NODE_ENV=test npx jest --coverage --detectOpenHandles"
   },
   "keywords": ["tests", "jest", "tdd", "typescript", "node"],
   "author": "Victor Naranjo",
@@ -23,7 +24,6 @@
     "@types/morgan": "^1.9.0",
     "@types/supertest": "^2.0.9",
     "jest": "^26.0.1",
-    "mongodb-memory-server": "^6.6.1",
     "prettier": "2.0.5",
     "ts-jest": "^26.1.0",
     "ts-node": "^8.10.2",
